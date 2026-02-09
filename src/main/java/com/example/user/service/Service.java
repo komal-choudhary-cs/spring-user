@@ -14,10 +14,12 @@ public class Service {
     private UserRepository userRepository;
 
     public User addUser(User user) {
+    	  System.out.println("hello");
         return userRepository.save(user);
     }
 
     public List<User> getUsers() {
         return userRepository.findAll();
+      
     }
 }
